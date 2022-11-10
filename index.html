@@ -17,7 +17,8 @@
   <body>
     <div id="root">
       <h1>{{message}}</h1>
-      <div><img class="w-25" :src="img" alt=""></div>
+      <button type="button" class="btn btn-primary my-3" @click="showImg">Primary</button>
+      <div><img class="w-25" :src="img" :class="showImage" alt="" /></div>
     </div>
 
     <script
